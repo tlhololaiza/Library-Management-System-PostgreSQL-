@@ -128,15 +128,6 @@ INSERT INTO patrons (id, name, email, borrowed_books) VALUES
 -- Basic query
 SELECT * FROM books;
 
-#### Get Book by Title
-```sql
--- Exact match
-SELECT * FROM books WHERE title = 'The Great Gatsby';
-
--- Case-insensitive search
-SELECT * FROM books WHERE LOWER(title) = LOWER('the great gatsby');
-```
-
 #### Get All Books by Specific Author
 ```sql
 -- By author ID
